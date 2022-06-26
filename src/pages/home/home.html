@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title style="font-family: Arial;">Clinicas</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-grid class="mapa-grid">
+
+    <div #map id="map"></div>
+
+  </ion-grid>
+
+  <ion-fab bottom left>
+    <button ion-fab mini><ion-icon name="arrow-dropright"></ion-icon></button>
+    <ion-fab-list side="right">
+      <button ion-fab (click)="gerarCSV()"><ion-icon name="apps"></ion-icon></button>
+      <button ion-fab (click)="gerarExcel()"><ion-icon name="attach"></ion-icon></button>
+      <button ion-fab (click)="gerarPDF()"><ion-icon name="document"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
+
+</ion-content>
